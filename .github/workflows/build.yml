@@ -25,7 +25,7 @@ jobs:
         pyinstaller --onedir --hidden-import=sklearn --hidden-import=pandas --hidden-import=seaborn --hidden-import=matplotlib --hidden-import=numpy --hidden-import=streamlit --hidden-import=openpyxl app_v1.py
     
     - name: Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: BBA-Insights-Windows
         path: dist/app_v1/
